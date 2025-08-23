@@ -42,6 +42,8 @@ Answer: A ghost bug.
 
 Tone: Playful, cynical, self-aware, and clever. Avoid dry definitions or generic trivia. Reference dev culture, not just concepts.
 
+Make sure no block brackets in the answer.
+
 Generate only 10 riddle-answer pair in valid JSON format.`;
     const response = await ai.models.generateContent({
       model: "gemini-2.5-flash",
