@@ -98,18 +98,15 @@ async function generateRiddles(count = 100) {
 export default async function handler(req, res) {
   try {
     await ensureTable();
+    const selectQuery = "SELECT riddle_id as id, riddle_text as text, answer_text as answer, likes FROM riddles WHERE used = false ORDER BY RANDOM() LIMIT 1";
 
     if (req.method === "GET") {
       // pick one unused riddle
-      let rows = await sql.query(
-        "SELECT riddle_id as id, riddle_text as text, answer_text as answer, likes FROM riddles WHERE used = false LIMIT 1"
-      );
+      let rows = await sql.query(selectQuery);
       if (!rows || rows.length === 0) {
         // generate more riddles if none available
-        await generateRiddles(1);
-        rows = await sql.query(
-          "SELECT riddle_id as id, riddle_text as text, answer_text as answer, likes FROM riddles WHERE used = false LIMIT 1"
-        );
+        await generateRiddles(10);
+        rows = await sql.query(selectQuery);
       }
 
       if (!rows || rows.length === 0) {
