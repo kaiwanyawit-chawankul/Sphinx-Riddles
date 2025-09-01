@@ -1,5 +1,4 @@
-import Head from "next/head";
-import Image from "next/image";
+import Header from "@/components/header";
 import { Geist, Geist_Mono } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import { useEffect, useState } from "react";
@@ -62,12 +61,7 @@ export default function Home() {
 
   return (
     <>
-      <Head>
-        <title>Sphinx Riddles</title>
-        <meta name="description" content="One riddle at a time — Sphinx Riddles" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <Header />
 
       <div className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}>
         <main className={styles.card} role="main">
