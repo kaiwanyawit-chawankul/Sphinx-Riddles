@@ -45,3 +45,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/b
 [] Cache
 [] Schedule generate questions
 [] Reset question when no question
+[] Share riddle
+[] PWA
+[] Fix like
