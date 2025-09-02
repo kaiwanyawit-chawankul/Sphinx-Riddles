@@ -54,7 +54,7 @@
     {
       "name": "Home",
       "url": "/home",
-      "description": "Home of Sphinx Riddles",
+      "description": "Home of Sphinx Riddles"
     }
   ],
   "protocol_handlers": [
