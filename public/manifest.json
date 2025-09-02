@@ -55,12 +55,12 @@
       "name": "Home",
       "url": "/home",
       "description": "Home of Sphinx Riddles",
-    },
-    "protocol_handlers": [
-      {
-        "protocol": "sphinx+riddles",
-        "url": "/riddles?for=%s"
-      }
-    ]
+    }
+  ],
+  "protocol_handlers": [
+    {
+      "protocol": "sphinx+riddles",
+      "url": "/riddles?for=%s"
+    }
   ]
 }
