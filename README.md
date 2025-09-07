@@ -46,5 +46,11 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/b
 [] Schedule generate questions
 [] Reset question when no question
 [] Share riddle
-[] PWA
+[x] PWA
 [] Fix like
+
+
+npx pwa-asset-generator 'public/sphinx.jpeg' ./assets
+npx pwa-asset-generator 'public/sphinx.jpeg' ./assets --opaque false --icon-only --favicon --type png
+
+convert apple-icon-180.png -define icon:auto-resize=512,192,180,256,128,64,48,32,16 output.ico
