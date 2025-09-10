@@ -3,6 +3,7 @@ import { neon } from "@neondatabase/serverless";
 const sql = neon(process.env.DATABASE_URL);
 
 export default async function handler(req, res) {
+  console.log("💥 HIT /api/sphinx/[id]/like", req.method, req.query.id);
   try {
     if (req.method !== "POST") {
       res.setHeader("Allow", ["POST"]);
@@ -15,8 +16,8 @@ export default async function handler(req, res) {
 
     if (!id) return res.status(400).json({ error: "missing riddle id" });
 
-    const result = await sql(
-      "UPDATE riddles SET likes = COALESCE(likes, 0) + 1 WHERE id = $1 RETURNING likes",
+    const result = await sql.query(
+      "UPDATE riddles SET likes = COALESCE(likes, 0) + 1 WHERE riddle_id = $1 RETURNING likes",
       [id]
     );
 
