@@ -42,12 +42,12 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/b
 
 ## TODO
 
-[] Cache
-[] Schedule generate questions
-[] Reset question when no question
-[] Share riddle
-[x] PWA
-[] Fix like
+- [] Cache
+- [] Schedule generate questions
+- [] Reset question when no question
+- [] Share riddle
+- [x] PWA
+- [] Fix like
 
 
 npx pwa-asset-generator 'public/sphinx.jpeg' ./assets
