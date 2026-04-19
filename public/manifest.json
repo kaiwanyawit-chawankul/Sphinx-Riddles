@@ -1,6 +1,6 @@
 {
   "name": "Sphinx Riddles",
-  "short_name": "Sphinx Riddles",
+  "short_name": "Sphinx.R",
   "start_url": "https://sphinx-riddles.vercel.app/",
   "display": "standalone",
   "description": "One riddle. No login. Dark, minimal, responsive.",
