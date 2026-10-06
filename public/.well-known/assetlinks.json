@@ -1,8 +1,15 @@
-[{
-      "relation": ["delegate_permission/common.handle_all_urls"],
-      "target": {
-        "namespace": "android_app",
-        "package_name": "app.vercel.sphinx_riddles.twa",
-        "sha256_cert_fingerprints": ["44:CB:D5:AD:22:48:25:65:A6:D0:61:DF:88:F5:09:7F:91:F2:32:36:69:83:20:4C:E8:85:7D:C6:0B:AA:C0:AC"]
-      }
-    }]
+[
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "app.vercel.sphinx_riddles.twa",
+            "sha256_cert_fingerprints": [
+                "44:CB:D5:AD:22:48:25:65:A6:D0:61:DF:88:F5:09:7F:91:F2:32:36:69:83:20:4C:E8:85:7D:C6:0B:AA:C0:AC",
+                "44:CB:D5:AD:22:48:25:65:A6:D0:61:DF:88:F5:09:7F:91:F2:32:36:69:83:20:4C:E8:85:7D:C6:0B:AA:C0:AC"
+            ]
+        }
+    }
+]
