@@ -1,7 +1,8 @@
 {
   "name": "sphinx-riddles",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
+  "description": "One developer riddle at a time. Show the answer, like it, then get the next.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,6 +10,8 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@capacitor/cli": "^7.6.2",
+    "@capacitor/core": "^8.3.1",
     "@google/genai": "^1.33.0",
     "@neondatabase/serverless": "^1.0.2",
     "next": "16.0.10",

@@ -2,7 +2,7 @@ import Head from "next/head";
 const Header = () => (
       <Head>
         <title>Sphinx Riddles</title>
-        <meta name="description" content="One riddle at a time — Sphinx Riddles" />
+        <meta name="description" content="One developer riddle at a time. Show the answer, like it, then get the next." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
         <meta name="application-name" content="Sphinx Riddles" />
@@ -31,12 +31,12 @@ const Header = () => (
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:url" content="https://yourdomain.com" />
         <meta name="twitter:title" content="Sphinx Riddles" />
-        <meta name="twitter:description" content="One riddle at a time — Sphinx Riddles" />
+        <meta name="twitter:description" content="One developer riddle at a time. Show the answer, like it, then get the next." />
         <meta name="twitter:image" content="https://yourdomain.com/icons/android-chrome-192x192.png" />
         <meta name="twitter:creator" content="@jobjingjo" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Sphinx Riddles" />
-        <meta property="og:description" content="One riddle at a time — Sphinx Riddles" />
+        <meta property="og:description" content="One developer riddle at a time. Show the answer, like it, then get the next." />
         <meta property="og:site_name" content="Sphinx Riddles" />
         <meta property="og:url" content="https://yourdomain.com" />
         <meta property="og:image" content="https://yourdomain.com/icons/apple-touch-icon.png" />

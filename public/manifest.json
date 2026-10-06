@@ -1,14 +1,17 @@
 {
   "name": "Sphinx Riddles",
-  "short_name": "Sphinx Riddles",
+  "short_name": "Sphinx",
   "start_url": "https://sphinx-riddles.vercel.app/",
+  "scope": "/",
+  "id": "/",
   "display": "standalone",
-  "description": "One riddle. No login. Dark, minimal, responsive.",
+  "description": "One developer riddle at a time. Show the answer, like it, then get the next.",
   "lang": "en-US",
-  "dir": "auto",
+  "dir": "ltr",
   "theme_color": "#000000",
   "background_color": "#000000",
   "orientation": "any",
+  "categories": ["entertainment", "education"],
   "icons": [
     {
       "src": "manifest-icon-192.maskable.png",
@@ -35,32 +38,12 @@
       "purpose": "maskable"
     }
   ],
-  "screenshots": [
-    {
-      "src": "https://www.pwabuilder.com/assets/screenshots/screen1.png",
-      "sizes": "2880x1800",
-      "type": "image/png",
-      "description": "A screenshot of the home page"
-    }
-  ],
-  "related_applications": [
-    {
-      "platform": "windows",
-      "url": " The URL to your app in that app store"
-    }
-  ],
-  "prefer_related_applications": false,
   "shortcuts": [
     {
-      "name": "Home",
-      "url": "/home",
-      "description": "Home of Sphinx Riddles"
-    }
-  ],
-  "protocol_handlers": [
-    {
-      "protocol": "sphinx+riddles",
-      "url": "/riddles?for=%s"
+      "name": "Play a riddle",
+      "short_name": "Riddle",
+      "url": "/",
+      "description": "Open the current Sphinx riddle"
     }
   ]
 }
